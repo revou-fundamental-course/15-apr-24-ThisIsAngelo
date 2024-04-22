@@ -1,1 +1,189 @@
 /* CSS file */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca',sans-serif;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0f172a;
+    gap: 1rem;
+}
+
+section hr {
+    width: 50%;
+}
+
+section .group-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+}
+
+section .group-1 p {
+    text-align: center;
+    font-weight: 300;
+}
+
+section .group-1 p span {
+    font-weight: bold;
+}
+
+section .group-1 .row-1 {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+section .group-1 .row-1 .col-1,
+section .group-1 .row-1 .col-2{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 50%;
+}
+
+section .group-1 .row-1 .col-1 h1,
+section .group-1 .row-1 .col-2 h1, 
+section .group-1 .row-2 .col-1 h1 {
+    text-align: center;
+}
+
+section .group-1 .row-1 .col-1 textarea,
+section .group-1 .row-1 .col-2 textarea, 
+section .group-1 .row-2 .col-1 textarea {
+    height: 5rem;
+    resize: none;
+    background-color: #334155;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+
+section .group-1 .row-1 .col-1 textarea:focus,
+section .group-1 .row-1 .col-2 textarea:focus,
+section .group-1 .row-2 .col-1 textarea:focus {
+    outline: none;
+    border: 1px solid #64748b;
+}
+
+section .group-1 .row-2 {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+section .group-1 .row-2 .col-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: .5rem;
+}
+
+section .group-1 .row-2 .col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: .5rem;
+}
+
+section .group-1 .row-2 .col-2 h1 {
+    text-align: center;
+}
+
+section .group-1 .row-2 .col-2 .btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section .group-1 .row-2 .col-2 .btn button {
+    width: 45%;
+    cursor: pointer;
+    background: #334155;
+    color: #fff;
+    border: 1px solid #64748b;
+    padding: 7.5px;
+    transition: .2s ease-in;
+}
+
+section .group-1 .row-2 .col-2 .btn button:hover {
+    background: #64748b;
+    border: 1px solid #334155;
+    color: #fff;
+}
+
+section .group-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+section .group-2 p {
+    font-size: 12px;
+}
+
+section .group-2 h1 {
+    text-align: center;
+}
+
+section .group-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    gap: .5rem;
+} 
+
+section .group-3 .desc {
+    text-align: center;
+    width: 80%;
+}
+
+section .group-3 .desc p span {
+    font-size: 20px;
+}
+
+section .group-3 .rumus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    gap: 1rem;
+}
+
+section .group-3 .rumus h2 { 
+    text-align: center;
+    background-color: #334155;
+    padding: 20px;
+    border: 2px dashed #94a3b8;
+    border-radius: 10px;
+}
+
+section .group-3 .rumus h2 span {
+    font-size: 30px;
+}
+
+section .group-3 .rumus p {
+    font-style: italic;
+    font-weight: bold;
+}

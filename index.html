@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Lexend Deca -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Temperature Converter</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section>
+      <div class="group-1">
+        <p>
+          Masukan suhu derajat <span>Celsius (&deg;C)</span> ke kotak dibawah,
+          lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam
+          bentuk <span>Fahrenheit (&deg;F)</span>.
+        </p>
+        <div class="row-1">
+          <div class="col-1">
+            <h1>Celsius (&deg;C):</h1>
+            <textarea name="celsius" id="celsius"></textarea>
+          </div>
+          <div class="col-2">
+            <h1>Fahrenheit (&deg;F):</h1>
+            <textarea name="fahrenheit" id="fahrenheit"></textarea>
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="col-1">
+            <h1>Cara Kalkulasi:</h1>
+            <textarea name="rumus" id="rumus" readonly></textarea>
+          </div>
+          <div class="col-2">
+            <h1>Action:</h1>
+            <div class="btn">
+              <button onclick="konversi()">Konversi</button>
+              <button onclick="reset()">Reset</button>
+              <button onclick="reverse()">Reverse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-2">
+        <p>*Celsius ke Fahrenheit</p>
+        <h1>Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+      </div>
+      <hr />
+      <div class="group-3">
+        <div class="desc">
+          <p>
+            Suhu <span>S</span> dalam Fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat
+            Celsius (&deg;C) kali 9/5 tambah 32.
+          </p>
+        </div>
+        <div class="rumus">
+          <h2><span>S</span>(&deg;F)=(<span>S</span>(&deg;C)x9/5)+32</h2>
+          <p>atau</p>
+          <h2><span>S</span>(&deg;F)=(<span>S</span>(&deg;C)x1.8)+32</h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
