@@ -35,12 +35,17 @@ section .group-1 {
 }
 
 section .group-1 p {
+  display: block;
   text-align: center;
   font-weight: 300;
 }
 
 section .group-1 p span {
   font-weight: bold;
+}
+
+section .group-1 #p-2 {
+  display: none;
 }
 
 section .group-1 .row-1 {
