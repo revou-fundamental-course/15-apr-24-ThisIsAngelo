@@ -27,12 +27,18 @@
         </p>
         <div class="row-1">
           <div class="col-1">
-            <h1>Celsius (&deg;C):</h1>
-            <textarea name="celsius" id="celsius"></textarea>
+            <select id="suhu-1">
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <textarea required id="input"></textarea>
           </div>
           <div class="col-2">
-            <h1>Fahrenheit (&deg;F):</h1>
-            <textarea name="fahrenheit" id="fahrenheit"></textarea>
+            <select id="suhu-2">
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit" selected>Fahrenheit</option>
+            </select>
+            <textarea id="answer" readonly></textarea>
           </div>
         </div>
         <div class="row-2">
@@ -45,28 +51,57 @@
             <div class="btn">
               <button onclick="konversi()">Konversi</button>
               <button onclick="reset()">Reset</button>
-              <button onclick="reverse()">Reverse</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="group-2">
-        <p>*Celsius ke Fahrenheit</p>
-        <h1>Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+      <div class="c-to-f" id="c-to-f">
+        <div class="group-2">
+          <p>*Celsius ke Fahrenheit</p>
+          <h1>Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+        </div>
+        <hr />
+        <div class="group-3">
+          <div class="desc">
+            <p>
+              Suhu <span>S</span> dalam Fahrenheit (&deg;F) sama dengan suhu
+              <span>S</span> dalam derajat Celsius (&deg;C) kali 9/5 tambah 32.
+            </p>
+          </div>
+          <div class="rumus">
+            <h2>
+              <span>S</span><sub>(&deg;F)</sub>=(<span>S</span
+              ><sub>(&deg;C)</sub>x9/5)+32
+            </h2>
+            <p>atau</p>
+            <h2>
+              <span>S</span><sub>(&deg;F)</sub>=(<span>S</span
+              ><sub>(&deg;C)</sub>x1.8)+32
+            </h2>
+          </div>
+        </div>
       </div>
-      <hr />
-      <div class="group-3">
-        <div class="desc">
-          <p>
-            Suhu <span>S</span> dalam Fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat
-            Celsius (&deg;C) kali 9/5 tambah 32.
-          </p>
+      <div class="f-to-c" id="f-to-c">
+        <div class="group-2">
+          <p>*Fahrenheit ke Celsius</p>
+          <h1>Cara Konversi Dari Fahrenheit (&deg;F) ke Celsius (&deg;C)</h1>
         </div>
-        <div class="rumus">
-          <h2><span>S</span>(&deg;F)=(<span>S</span>(&deg;C)x9/5)+32</h2>
-          <p>atau</p>
-          <h2><span>S</span>(&deg;F)=(<span>S</span>(&deg;C)x1.8)+32</h2>
-        </div>
+        <hr />
+        <div class="group-3">
+          <div class="desc">
+            <p>
+              Suhu <span>S</span> dalam Celsius (&deg;C) sama dengan suhu
+              <span>S</span> dalam derajat 5/9 kali ( Fahrenheit (&deg;F) kurang
+              32).
+            </p>
+          </div>
+          <div class="rumus">
+            <h2>
+              <span>S</span><sub>(&deg;C)</sub>=5/9x(<span>S</span
+              ><sub>(&deg;F)</sub>-32)
+            </h2>
+          </div>
+      </div>
       </div>
     </section>
 

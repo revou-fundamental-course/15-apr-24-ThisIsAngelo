@@ -57,8 +57,6 @@ section .group-1 .row-1 .col-2{
     width: 50%;
 }
 
-section .group-1 .row-1 .col-1 h1,
-section .group-1 .row-1 .col-2 h1, 
 section .group-1 .row-2 .col-1 h1 {
     text-align: center;
 }
@@ -80,6 +78,17 @@ section .group-1 .row-1 .col-2 textarea:focus,
 section .group-1 .row-2 .col-1 textarea:focus {
     outline: none;
     border: 1px solid #64748b;
+}
+
+section .group-1 .row-1 .col-1 select, 
+section .group-1 .row-1 .col-2 select {
+    width: 35%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #64748b;
+    color: #fff;
+    cursor: pointer;
 }
 
 section .group-1 .row-2 {
@@ -109,12 +118,15 @@ section .group-1 .row-2 .col-2 h1 {
 section .group-1 .row-2 .col-2 .btn {
     display: flex;
     flex-wrap: wrap;
+    align-items:center;
+    height: 100%;
     justify-content: center;
     gap: 1rem;
 }
 
 section .group-1 .row-2 .col-2 .btn button {
     width: 45%;
+    height: 50%;
     cursor: pointer;
     background: #334155;
     color: #fff;
@@ -129,22 +141,31 @@ section .group-1 .row-2 .col-2 .btn button:hover {
     color: #fff;
 }
 
-section .group-2 {
+/* C to F */
+section .c-to-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section .c-to-f .group-2 {
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 1rem;
 }
 
-section .group-2 p {
+section .c-to-f .group-2 p {
     font-size: 12px;
 }
 
-section .group-2 h1 {
+section .c-to-f .group-2 h1 {
     text-align: center;
 }
 
-section .group-3 {
+section .c-to-f .group-3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,16 +174,16 @@ section .group-3 {
     gap: .5rem;
 } 
 
-section .group-3 .desc {
+section .c-to-f .group-3 .desc {
     text-align: center;
     width: 80%;
 }
 
-section .group-3 .desc p span {
+section .c-to-f .group-3 .desc p span {
     font-size: 20px;
 }
 
-section .group-3 .rumus {
+section .c-to-f .group-3 .rumus {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +192,7 @@ section .group-3 .rumus {
     gap: 1rem;
 }
 
-section .group-3 .rumus h2 { 
+section .c-to-f .group-3 .rumus h2 { 
     text-align: center;
     background-color: #334155;
     padding: 20px;
@@ -179,11 +200,79 @@ section .group-3 .rumus h2 {
     border-radius: 10px;
 }
 
-section .group-3 .rumus h2 span {
+section .c-to-f .group-3 .rumus h2 span {
     font-size: 30px;
 }
 
-section .group-3 .rumus p {
+section .c-to-f .group-3 .rumus p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* F to C */
+section .f-to-c {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section .f-to-c .group-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+section .f-to-c .group-2 p {
+    font-size: 12px;
+}
+
+section .f-to-c .group-2 h1 {
+    text-align: center;
+}
+
+section .f-to-c .group-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    gap: .5rem;
+} 
+
+section .f-to-c .group-3 .desc {
+    text-align: center;
+    width: 80%;
+}
+
+section .f-to-c .group-3 .desc p span {
+    font-size: 20px;
+}
+
+section .f-to-c .group-3 .rumus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    gap: 1rem;
+}
+
+section .f-to-c .group-3 .rumus h2 { 
+    text-align: center;
+    background-color: #334155;
+    padding: 20px;
+    border: 2px dashed #94a3b8;
+    border-radius: 10px;
+}
+
+section .f-to-c .group-3 .rumus h2 span {
+    font-size: 30px;
+}
+
+section .f-to-c .group-3 .rumus p {
     font-style: italic;
     font-weight: bold;
 }
